@@ -1,0 +1,42 @@
+/* ---------------- HERO ---------------- */
+.hero {
+    min-height: 80vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(180deg, rgba(11, 15, 23, 0.6), rgba(11, 15, 23, 0.75)),
+        url("../img/img3.png")
+            center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    transition:
+        background 0.4s ease,
+        color 0.4s ease;
+}
+
+/* ---------------- Parceiros ---------------- */
+.parceiros {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    transition:
+        background 0.4s ease,
+        color 0.4s ease;
+}
+.parce{
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    transition:
+        background 0.4s ease,
+        color 0.4s ease;
+}
