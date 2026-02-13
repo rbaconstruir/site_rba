@@ -1,3 +1,65 @@
+/* ---------------- MENU RADIAL ---------------- */
+.menu-btn {
+    position: fixed;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #f46415;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1200;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition:
+        opacity 0.3s,
+        background 0.3s;
+    pointer-events: none;
+}
+.menu-btn:hover {
+    opacity: 1;
+    background: #f46415;
+}
+
+.radial {
+    position: fixed;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1200;
+}
+.radial a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 10px 0;
+    border-radius: 50%;
+    background: #f46415;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateX(-20px) scale(0);
+    transition:
+        all 0.4s ease,
+        opacity 0.4s;
+    font-size: 18px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.radial.active a {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
 /* ---------------- HERO ---------------- */
 .hero {
     min-height: 80vh;
@@ -8,13 +70,23 @@
     justify-content: center;
     background:
         linear-gradient(180deg, rgba(11, 15, 23, 0.6), rgba(11, 15, 23, 0.75)),
-        url("../img/img3.png")
-            center/cover no-repeat;
+        url("../img/img3.png") center/cover no-repeat;
     color: #fff;
     text-align: center;
     transition:
         background 0.4s ease,
         color 0.4s ease;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: #212529;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer-logo {
+    width: 120px;
 }
 
 /* ---------------- Parceiros ---------------- */
@@ -30,7 +102,7 @@
         background 0.4s ease,
         color 0.4s ease;
 }
-.parce{
+.parce {
     padding: 0.5rem;
     align-items: center;
     justify-content: center;

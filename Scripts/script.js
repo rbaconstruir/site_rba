@@ -1,3 +1,32 @@
+// ---------------- MENU RADIAL ----------------
+const menuBtn = document.getElementById("menuBtn");
+const radial = document.getElementById("radial");
+
+// Menu radial só aparece fora do hero
+window.addEventListener("scroll", () => {
+    const heroHeight = document.querySelector(".hero").offsetHeight;
+
+    // Menu radial
+    if (window.scrollY > heroHeight) {
+        menuBtn.style.opacity = 0.5;
+        menuBtn.style.pointerEvents = "auto";
+    } else {
+        menuBtn.style.opacity = 0;
+        menuBtn.style.pointerEvents = "none";
+        radial.classList.remove("active");
+        hideOverlay();
+    }
+
+    // Offcanvas trigger
+    offcanvasBtn.style.opacity = window.scrollY > heroHeight ? 0.5 : 0;
+});
+
+// Toggle radial
+menuBtn.addEventListener("click", () => {
+    radial.classList.toggle("active");
+    radial.classList.contains("active") ? showOverlay() : hideOverlay();
+});
+
 // ------------------------- WORDS ANIMATION -------------------------
 
 document.addEventListener("DOMContentLoaded", () => {

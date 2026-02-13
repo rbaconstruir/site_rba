@@ -12,6 +12,7 @@
   - [Ferramentas](#ferramentas)
   - [Formas](#formas)
     - [Cores](#cores)
+    - [Gradientes Exemplos](#gradientes-exemplos)
     - [Fonts](#fonts)
   - [Estado Atual](#estado-atual)
   - [Exemplos de bash commands](#exemplos-de-bash-commands)
@@ -44,6 +45,9 @@ Serve tambem para colecionar os requisitos e o ambito dos projetos.
 
 ### 3. Formularios
 
+- Criacao de Microsoft Forms
+- Perguntas para colaboradores
+
 ## Ferramentas
 
 - WordPress
@@ -56,14 +60,34 @@ Serve tambem para colecionar os requisitos e o ambito dos projetos.
 
 ### Cores
 
-- <span style = "color: #f46415">#f46415 (Orange)</span>
-- <span style = "color: #55315b">#55315b (Purple)</span>
+- ![#f03c15](https://placehold.co/15x15/f46415/f46415.png) `#f46415` (Orange)
+- ![#f03c15](https://placehold.co/15x15/55315b/55315b.png) `#55315b` (Purple)
+
+| Token               | Valor HSL          | Utilização                        |
+|---------------------|--------------------|-----------------------------------|
+| `--primary-glow`    | `20 78% 65%`       | Laranja claro — hovers, gradientes|
+| `--primary`         | `20 78% 55%`       | Laranja — cor principal, CTAs     |
+| `--secondary`       | `270 30% 30%`      | Roxo/púrpura — fundos escuros     |
+| `--background`      | `0 0% 98%`         | Branco off-white — fundo geral    |
+| `--foreground`      | `270 25% 15%`      | Texto escuro                      |
+| `--muted`           | `20 10% 94%`       | Cinza claro — fundos suaves       |
+| `--muted-foreground`| `270 15% 40%`      | Texto secundário                  |
+
+### Gradientes Exemplos
+
+```css
+--gradient-hero: linear-gradient(135deg, hsl(20 78% 55%) 0%, hsl(30 85% 50%) 100%);
+--gradient-dark: linear-gradient(135deg, hsl(270 30% 20%) 0%, hsl(270 30% 30%) 100%);
+--gradient-overlay: linear-gradient(180deg, hsla(270 30% 15% / 0.7) 0%, hsla(270 30% 15% / 0.9) 100%);
+```
 
 ### Fonts
 
-- Gotham (Logo - Subtitulo)
-- League Spartan (Logo - Titulo)
-- Monserrat (Canva - Marca)
+|Nome           | Utilizacao            |
+|---------------|-----------------------|
+|Gotham         | Logo - Subtitulo      |
+|League Spartan | Logo - Titulo         |
+|Monserrat      | Canva - Marca         |
 
 ## Estado Atual
 
